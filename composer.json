@@ -1,0 +1,28 @@
+{
+    "name": "ghiffariaq/mini-acl",
+    "description": "Mini ACL",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ghiffari Assamar Qandi",
+            "email": "travish90@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Ghiffariaq\\MiniACL\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ghiffariaq\\MiniACL\\MiniACLServiceProvider"
+            ],
+            "aliases": {
+                "MiniACL": "Ghiffariaq\\MiniACL\\Facades\\MiniACL"
+            }
+        }
+    }
+}
