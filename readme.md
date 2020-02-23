@@ -103,3 +103,5 @@ license. Please see the [license file](license.md) for more information.
 
 [link-packagist]: https://packagist.org/packages/ghiffariaq/mini-acl
 [link-downloads]: https://packagist.org/packages/ghiffariaq/mini-acl
+[link-author]: https://github.com/Ghiffari
+[link-contributors]: ../../contributors
