@@ -43,41 +43,35 @@ After finish installing using composer
 
 We have prepare simple example to assign any roles to specific user id by using this artisan command.
 
-    ```
     php artisan assign:role {name} {user_id}
-    ```
+
 
 
 ## Usage
 
 ### Assign Role to user
 
-    ```php
     $user = User::findOrFail($id);
     $user->assign('role_name');
-    ```
+
 
 ### Remove Role from user
 
-    ```php
     $user = User::findOrFail($id);
     $user->retract('role_name');
-    ```
 
 ### Retrieve All Roles
 
-    ```php
     $user = User::findOrFail($id);
     $user->roles;
-    ```
+
 
 
 ### Check Whether user is a specific role
 
-    ```php
     $user = User::findOrFail($id);
     $user->isA('role_name');
-    ```
+
 
 
 ## Testing
