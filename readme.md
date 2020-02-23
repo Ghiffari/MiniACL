@@ -74,16 +74,6 @@ We have prepare simple example to assign any roles to specific user id by using 
 
 
 
-## Testing
-
-``` bash
-$ composer test
-```
-
-## Contributing
-
-Please see [contributing.md](contributing.md) for details and a todolist.
-
 ## Security
 
 If you discover any security related issues, please email travish90@gmail.com instead of using the issue tracker.
