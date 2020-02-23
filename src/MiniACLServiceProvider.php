@@ -14,7 +14,6 @@ class MiniACLServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadMigrationsFrom(__DIR__.'/Database/Migrations');
-        $this->loadRoutesFrom(__DIR__.'/Routes/web.php');
 
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
