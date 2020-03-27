@@ -12,7 +12,7 @@ trait HasRoles
 
     public function roles()
     {
-        return $this->belongsToMany('Ghiffariaq\MiniACL\Models\Role','user_role','user_id','role_id')->withTimestamps();
+        return $this->belongsToMany('Ghiffariaq\MiniACL\Models\Role','user_role','user_id','role_id');
     }
 
 	public function isAn($role)

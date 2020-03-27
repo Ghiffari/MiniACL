@@ -11,6 +11,6 @@ class Role extends Model
     ];
     public function users()
     {
-        return $this->belongsToMany(config('miniacl.user_model'),'user_role','user_id','role_id')->withTimestamps();
+        return $this->belongsToMany(config('miniacl.user_model'),'user_role','user_id','role_id');
     }
 }
