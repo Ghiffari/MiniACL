@@ -17,17 +17,17 @@ trait HasRoles
 
 	public function isAn($role)
 	{
-		return in_array($role, $this->roles->pluck('name')->toArray());
+		$roles = $this->roles->pluck('name')->toArray();
+		if(in_array($role,$roles)){
+            return true;
+        }
+        return false;
 	}
 
 	public function isA($role)
 	{
 		return $this->isAn($role);
 	}
-
-    public function isNotA($role){
-        return !$this->isA($role);
-    }
 
 	public function scopeWhereIs($query, $role)
     {
@@ -70,6 +70,6 @@ trait HasRoles
     		$this->roles()->detach($check->id);
     		return true;
     	}
-    	throw new \Exception("Role Not Found");
+    	return $check;
     }
 }
